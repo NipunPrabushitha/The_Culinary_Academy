@@ -15,10 +15,14 @@ public class LoginController {
     private TextField txtAdminId;
 
     @FXML
-    private PasswordField txtPasswoard;
+    private PasswordField txtPassword;
 
     @FXML
     void btnLoginInOnAction(ActionEvent event) {
+
+    }
+    @FXML
+    void forgetPasswordOnAction(ActionEvent event) {
 
     }
 
