@@ -86,12 +86,12 @@
                 <Font size="24.0" />
             </font>
         </Label>
-        <Text fill="#ecf0f1" layoutX="874.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="THE CULINARY ACADEMY">
+        <Text fill="#ecf0f1" layoutX="748.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="THE CULINARY ACADEMY">
             <font>
                 <Font name="System Bold" size="64.0" />
             </font>
         </Text>
-        <AnchorPane fx:id="ChildRoot" layoutX="438.0" layoutY="118.0" prefHeight="869.0" prefWidth="1467.0">
+        <AnchorPane fx:id="root" layoutX="438.0" layoutY="118.0" prefHeight="869.0" prefWidth="1467.0">
             <children>
                 <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#95a5a6" height="200.0" layoutX="59.0" layoutY="57.0" stroke="BLACK" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="410.0" />
                 <Text layoutX="68.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Count" underline="true">

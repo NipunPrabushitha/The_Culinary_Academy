@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="869.0" prefWidth="1467.0" styleClass="ChiledBackground" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.AdminRegistration">
+    <children>
+        <Text fill="WHITE" layoutX="561.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMIN REGISTRATION">
+            <font>
+                <Font name="Arial Bold" size="48.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="207.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin ID">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="207.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Username">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtAdminUsername" layoutX="207.0" layoutY="360.0" prefHeight="27.0" prefWidth="272.0">
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+            <effect>
+                <DropShadow />
+            </effect>
+        </TextField>
+        <Text fill="WHITE" layoutX="207.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Password">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Text>
+        <Label fx:id="lblAdminID" layoutX="202.0" layoutY="200.0" prefHeight="27.0" prefWidth="272.0" textFill="WHITE" />
+        <Text fill="WHITE" layoutX="207.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Re-Enter Password">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Text>
+        <PasswordField fx:id="txtAdminPassword" layoutX="207.0" layoutY="436.0" prefHeight="27.0" prefWidth="272.0">
+            <effect>
+                <DropShadow />
+            </effect>
+        </PasswordField>
+        <PasswordField fx:id="txtAdminRePassword" layoutX="207.0" layoutY="509.0" prefHeight="27.0" prefWidth="272.0">
+            <effect>
+                <DropShadow />
+            </effect>
+        </PasswordField>
+        <Text fill="WHITE" layoutX="207.0" layoutY="626.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Security Question">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtAdminSecurityQuestion" layoutX="207.0" layoutY="637.0" prefHeight="27.0" prefWidth="272.0" promptText="What is your Favorite Color?">
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+            <effect>
+                <DropShadow />
+            </effect>
+        </TextField>
+        <Text fill="WHITE" layoutX="207.0" layoutY="692.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A security question like &quot;What is your favorite color?&quot; helps confirm your identity for account recovery." wrappingWidth="427.720703125" />
+        <JFXButton buttonType="RAISED" layoutX="264.0" layoutY="753.0" onAction="#btnConfirmOnAction" prefHeight="41.0" prefWidth="178.0" style="-fx-background-color: #d35400;" text="CONFIRM" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </JFXButton>
+        <TableView fx:id="tblCoordinatorTable" layoutX="828.0" layoutY="303.0" prefHeight="369.0" prefWidth="453.0">
+            <columns>
+                <TableColumn fx:id="tblAdminID" prefWidth="182.99993896484375" text="Admin ID" />
+                <TableColumn fx:id="tblAdminUsername" minWidth="0.0" prefWidth="269.00006103515625" text="Username" />
+            </columns>
+        </TableView>
+      <TextField fx:id="txtAdminId" layoutX="306.0" layoutY="251.0" prefHeight="27.0" prefWidth="272.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+    </children>
+</AnchorPane>
