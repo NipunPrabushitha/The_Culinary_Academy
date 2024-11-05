@@ -1,32 +1,27 @@
-package org.example.entity;
+package org.example.model;
 
-
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-
-@Entity
-public class Admin {
-    @Id
+public class AdminDTO {
     private String userId;
     private String userName;
     private String password;
     private String forgetPassword;
 
-
-
-    public Admin(String userId, String userName, String password, String forgetPassword) {
+    public AdminDTO(String userId, String userName, String password, String forgetPassword) {
         this.userId = userId;
         this.userName = userName;
         this.password = password;
         this.forgetPassword = forgetPassword;
     }
-    public Admin(String userName, String password) {
+
+    public AdminDTO(String userName, String password) {
         this.userName = userName;
         this.password = password;
     }
-    public Admin() {
+
+    public AdminDTO(){
 
     }
+
     public String getUserId() {
         return userId;
     }
