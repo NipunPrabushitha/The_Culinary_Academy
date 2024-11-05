@@ -14,7 +14,7 @@ import java.io.IOException;
 public class LoginController {
 
     @FXML
-    private AnchorPane root;
+    private AnchorPane rootNode;
 
     @FXML
     private TextField txtAdminId;
@@ -24,7 +24,19 @@ public class LoginController {
 
     @FXML
     void btnLoginInOnAction(ActionEvent event) {
+        AnchorPane rootNode = null;
+        try {
+            rootNode = FXMLLoader.load(this.getClass().getResource("/view/Dashboard.fxml"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
+        Scene scene = new Scene(rootNode);
+
+        Stage stage = (Stage) this.rootNode.getScene().getWindow();
+        stage.setScene(scene);
+        stage.centerOnScreen();
+        stage.setTitle("Dashboard Form");
     }
     @FXML
     void forgetPasswordOnAction(ActionEvent event) {
@@ -40,9 +52,9 @@ public class LoginController {
 
         Scene scene = new Scene(rootNode);
 
-        Stage stage = (Stage) this.root.getScene().getWindow();
+        Stage stage = (Stage) this.rootNode.getScene().getWindow();
         stage.setScene(scene);
         stage.centerOnScreen();
-        stage.setTitle("Dashboard Form");
+        stage.setTitle("Forget Password Form");
     }
 }
