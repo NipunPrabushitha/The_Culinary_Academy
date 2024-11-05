@@ -68,7 +68,7 @@ public class AdminRegistration {
                 new Alert(Alert.AlertType.INFORMATION, "Admin saved Unsuccessfully").show();
             }
         }else{
-            new Alert(Alert.AlertType.INFORMATION, "Password Not Match").show();
+            new Alert(Alert.AlertType.INFORMATION, "Password Not Matched").show();
             txtAdminPassword.setText("");
             txtAdminRePassword.setText("");
         }
