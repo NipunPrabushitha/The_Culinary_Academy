@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
+import org.example.bo.BOFactory;
 import org.example.bo.custom.AdminBO;
 import org.example.bo.custom.impl.AdminBOImpl;
 import org.example.dao.DAOFactory;
@@ -48,16 +49,50 @@ public class AdminRegistration {
     @FXML
     private TextField txtAdminUsername;
 
-    AdminBO adminBO = (AdminBO) DAOFactory.getDAOFactory().getDAO(DAOFactory.DAOType.ADMIN);
+    AdminBO adminBO = (AdminBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.ADMIN);
+
 
     @FXML
     void btnConfirmOnAction(ActionEvent event) {
+        String userId = txtAdminId.getText();
         String username = txtAdminUsername.getText();
         String password = txtAdminPassword.getText();
-        String rePassword = txtAdminRePassword.getText();
+        String repassword  = txtAdminRePassword.getText();
         String securityQuestion = txtAdminSecurityQuestion.getText();
+        String role = "admin";
 
+        if(password.equals(repassword)){
+            boolean saved = adminBO.saveAdmin(new AdminDTO(userId,username, password, securityQuestion,role));
+            clearFields();
+            if(saved){
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setHeaderText("Admin Registration Successful");
+                alert.setContentText("Admin ID: " + userId);
+                alert.showAndWait();
+            }else{
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setHeaderText("Admin Registration Failed");
+                alert.setContentText("Please try again!");
+                alert.showAndWait();
+            }
+        }else{
+            clearFields();
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText("Password Not Matched");
+            alert.setContentText("Please try again!");
+            alert.showAndWait();
+            txtAdminRePassword.setText("");
+            txtAdminPassword.setText("");
+        }
 
+    }
+
+    public void clearFields(){
+        txtAdminId.setText("");
+        txtAdminUsername.setText("");
+        txtAdminPassword.setText("");
+        txtAdminRePassword.setText("");
+        txtAdminSecurityQuestion.setText("");
     }
 
 

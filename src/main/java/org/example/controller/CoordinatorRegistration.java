@@ -4,9 +4,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
-import org.example.bo.custom.CoordinatorBO;
-import org.example.bo.custom.impl.CoordinatorBOImpl;
-import org.example.model.CoordinatorDTO;
+import org.example.bo.BOFactory;
+import org.example.bo.custom.AdminBO;
+import org.example.model.AdminDTO;
 
 
 public class CoordinatorRegistration {
@@ -41,11 +41,48 @@ public class CoordinatorRegistration {
     @FXML
     private TextField txtCoordinatorUsername;
 
+    AdminBO adminBO = (AdminBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.ADMIN);
 
 
     @FXML
     void btnConfirmOnAction(ActionEvent event) {
+        String userId = txtCoordinatorID.getText();
+        String username = txtCoordinatorUsername.getText();
+        String password = txtCoordinatorPassword.getText();
+        String repassword  = txtCoordinatorRePassword.getText();
+        String securityQuestion = txtCoordinatorSecurityQuestion.getText();
+        String role = "coordinator";
 
+        if(password.equals(repassword)){
+            boolean saved = adminBO.saveAdmin(new AdminDTO(userId,username, password, securityQuestion,role));
+            clearFields();
+            if(saved){
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setHeaderText("Coordinator Registration Successful");
+                alert.setContentText("Coordinator ID: " + userId);
+                alert.showAndWait();
+            }else{
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setHeaderText("Coordinator Registration Failed");
+                alert.setContentText("Please try again!");
+                alert.showAndWait();
+            }
+        }else{
+            clearFields();
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText("Password Not Matched");
+            alert.setContentText("Please try again!");
+            alert.showAndWait();
+            txtCoordinatorRePassword.setText("");
+            txtCoordinatorPassword.setText("");
+        }
+    }
+    public void clearFields(){
+        txtCoordinatorID.setText("");
+        txtCoordinatorUsername.setText("");
+        txtCoordinatorPassword.setText("");
+        txtCoordinatorRePassword.setText("");
+        txtCoordinatorSecurityQuestion.setText("");
     }
 
 }

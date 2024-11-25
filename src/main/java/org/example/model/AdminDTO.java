@@ -5,22 +5,18 @@ public class AdminDTO {
     private String userName;
     private String password;
     private String forgetPassword;
+    private String role;
 
-    public AdminDTO(String userId, String userName, String password, String forgetPassword) {
+    public AdminDTO() {
+
+    }
+
+    public AdminDTO(String userId, String userName, String password, String forgetPassword, String role) {
         this.userId = userId;
         this.userName = userName;
         this.password = password;
         this.forgetPassword = forgetPassword;
-    }
-
-    public AdminDTO(String userName, String password) {
-        this.userName = userName;
-        this.password = password;
-    }
-
-
-    public AdminDTO(){
-
+        this.role = role;
     }
 
     public String getUserId() {
@@ -53,5 +49,13 @@ public class AdminDTO {
 
     public void setForgetPassword(String forgetPassword) {
         this.forgetPassword = forgetPassword;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 }
