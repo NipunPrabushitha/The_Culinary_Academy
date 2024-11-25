@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="84526be1-8330-489b-b7b9-c34bfaffd2a0" name="Changes" comment="done Coordinator save">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/bo/custom/AdminBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/bo/custom/AdminBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/bo/custom/CoordinatorBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/bo/custom/CoordinatorBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/bo/custom/impl/AdminBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/bo/custom/impl/AdminBOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/bo/custom/impl/CoordinatorBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/bo/custom/impl/CoordinatorBOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/AdminRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/AdminRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/CoordinatorRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/CoordinatorRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/AdminDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/AdminDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/CoordinatorDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/CoordinatorDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/impl/AdminDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/impl/AdminDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/impl/CoordinatorDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/impl/CoordinatorDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/Coordinator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Coordinator.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2oNunJbTYvdXFCPo1vmFqt4dcKO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.LauncherWrapper.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/nipun/Documents/The_Culinary_Academy/src/main/resources/images&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/nipun/Documents/The_Culinary_Academy/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/images" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.config" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="LauncherWrapper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.LauncherWrapper" />
+      <module name="The_Culinary_Academy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LauncherWrapper" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="84526be1-8330-489b-b7b9-c34bfaffd2a0" name="Changes" comment="" />
+      <created>1730722522805</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730722522805</updated>
+      <workItem from="1730722524065" duration="430000" />
+      <workItem from="1730723055546" duration="117000" />
+      <workItem from="1730723180567" duration="111000" />
+      <workItem from="1730723427531" duration="22000" />
+      <workItem from="1730723456044" duration="4000" />
+      <workItem from="1730723586101" duration="606000" />
+      <workItem from="1730726606826" duration="4511000" />
+      <workItem from="1730749090266" duration="6753000" />
+      <workItem from="1730795881034" duration="390000" />
+      <workItem from="1730796283494" duration="23206000" />
+      <workItem from="1731744040603" duration="2000" />
+      <workItem from="1732163409134" duration="66000" />
+      <workItem from="1732521621752" duration="401000" />
+    </task>
+    <task id="LOCAL-00001" summary="init the project">
+      <option name="closed" value="true" />
+      <created>1730741243511</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730741243511</updated>
+    </task>
+    <task id="LOCAL-00002" summary="create fxml files for login and dashboard">
+      <option name="closed" value="true" />
+      <created>1730741319870</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730741319870</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add images">
+      <option name="closed" value="true" />
+      <created>1730741339007</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730741339007</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add forgetPassword ui and controller">
+      <option name="closed" value="true" />
+      <created>1730749917158</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730749917158</updated>
+    </task>
+    <task id="LOCAL-00005" summary="setup forgetPassword">
+      <option name="closed" value="true" />
+      <created>1730751545187</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1730751545187</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add hibernate to the project">
+      <option name="closed" value="true" />
+      <created>1730751577600</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1730751577600</updated>
+    </task>
+    <task id="LOCAL-00007" summary="create entity">
+      <option name="closed" value="true" />
+      <created>1730751601173</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730751601173</updated>
+    </task>
+    <task id="LOCAL-00008" summary="setup layered Architecture and admin entity">
+      <option name="closed" value="true" />
+      <created>1730792048602</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1730792048602</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add images">
+      <option name="closed" value="true" />
+      <created>1730797874712</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1730797874712</updated>
+    </task>
+    <task id="LOCAL-00010" summary="done dashboard ui">
+      <option name="closed" value="true" />
+      <created>1730797906018</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1730797906018</updated>
+    </task>
+    <task id="LOCAL-00011" summary="load dashboard">
+      <option name="closed" value="true" />
+      <created>1730797922139</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1730797922139</updated>
+    </task>
+    <task id="LOCAL-00012" summary="done Admin Save">
+      <option name="closed" value="true" />
+      <created>1730808475108</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1730808475108</updated>
+    </task>
+    <task id="LOCAL-00013" summary="done Coordinator save">
+      <option name="closed" value="true" />
+      <created>1730831449829</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1730831449829</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init the project" />
+    <MESSAGE value="create fxml files for login and dashboard" />
+    <MESSAGE value="add forgetPassword ui and controller" />
+    <MESSAGE value="setup forgetPassword" />
+    <MESSAGE value="add hibernate to the project" />
+    <MESSAGE value="create entity" />
+    <MESSAGE value="setup layered Architecture and admin entity" />
+    <MESSAGE value="add images" />
+    <MESSAGE value="done dashboard ui" />
+    <MESSAGE value="load dashboard" />
+    <MESSAGE value="done Admin Save" />
+    <MESSAGE value="done Coordinator save" />
+    <option name="LAST_COMMIT_MESSAGE" value="done Coordinator save" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

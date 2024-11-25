@@ -1,5 +1,6 @@
 package org.example.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
@@ -7,6 +8,7 @@ import jakarta.persistence.Id;
 public class Coordinator {
     @Id
     private String userId;
+    @Column(unique = true)
     private String userName;
     private String password;
     private String forgetPassword;

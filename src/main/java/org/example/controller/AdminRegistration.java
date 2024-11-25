@@ -6,8 +6,15 @@ import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import org.example.bo.custom.AdminBO;
 import org.example.bo.custom.impl.AdminBOImpl;
+import org.example.dao.DAOFactory;
 import org.example.entity.Admin;
 import org.example.model.AdminDTO;
+
+import javax.crypto.Cipher;
+import javax.crypto.KeyGenerator;
+import javax.crypto.SecretKey;
+import javax.crypto.spec.SecretKeySpec;
+import java.util.Base64;
 
 public class AdminRegistration {
 
@@ -41,39 +48,17 @@ public class AdminRegistration {
     @FXML
     private TextField txtAdminUsername;
 
+    AdminBO adminBO = (AdminBO) DAOFactory.getDAOFactory().getDAO(DAOFactory.DAOType.ADMIN);
+
     @FXML
     void btnConfirmOnAction(ActionEvent event) {
-        String useId = txtAdminId.getText();
         String username = txtAdminUsername.getText();
         String password = txtAdminPassword.getText();
+        String rePassword = txtAdminRePassword.getText();
         String securityQuestion = txtAdminSecurityQuestion.getText();
 
-        String reEnter = txtAdminRePassword.getText();
 
-        if (reEnter.equals(password)){
-            AdminDTO admin = new AdminDTO(useId, username, password,securityQuestion);
-
-            boolean isSaved = false;
-            try {
-                AdminBO adminBO = new AdminBOImpl();
-                isSaved = adminBO.saveAdmin(admin);
-            }catch (Exception e) {
-                new Alert(Alert.AlertType.ERROR, e.getMessage()).show();
-                isSaved = false;
-            }
-            if (isSaved) {
-                /*initialize();*/
-                new Alert(Alert.AlertType.INFORMATION, "Admin saved successfully").show();
-            }else {
-                new Alert(Alert.AlertType.INFORMATION, "Admin saved Unsuccessfully").show();
-            }
-        }else{
-            new Alert(Alert.AlertType.INFORMATION, "Password Not Matched").show();
-            txtAdminPassword.setText("");
-            txtAdminRePassword.setText("");
-        }
     }
-
 
 
     /*public void getCurrentOrderId(){

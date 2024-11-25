@@ -14,4 +14,10 @@ public class AdminBOImpl implements AdminBO {
         return adminDAO.save(new Admin(admin.getUserId(), admin.getUserName(),admin.getPassword(),admin.getForgetPassword()));
     }
 
+    @Override
+    public String getIdByUserName(String username) {
+        AdminDAO adminDAO = new AdminDAOImpl();
+        return adminDAO.getId(username);
+    }
+
 }
