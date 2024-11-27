@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="869.0" prefWidth="1467.0" styleClass="ChiledBackground" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.PaymentController">
+    <children>
+        <Text fill="WHITE" layoutX="619.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PAYMENT">
+            <font>
+                <Font name="Arial Bold" size="48.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="127.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration ID">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Text>
+      <ComboBox fx:id="cmbRegidtrationId" layoutX="258.0" layoutY="198.0" onAction="#cmbRegistrationIdOnAction" prefHeight="27.0" prefWidth="186.0" />
+      <Text fill="WHITE" layoutX="127.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="351.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="566.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Program ID">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="773.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Program Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="991.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duration">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="422.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Due Amout">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="646.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Amount">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="dpPaymentDate" layoutX="127.0" layoutY="401.0" prefHeight="27.0" prefWidth="198.0" />
+      <Text fill="WHITE" layoutX="127.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Date">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtPaymentAmount" layoutX="646.0" layoutY="403.0" prefHeight="27.0" prefWidth="171.0" />
+      <Label fx:id="lblStudentId" layoutX="127.0" layoutY="295.0" prefHeight="27.0" prefWidth="171.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStudentName" layoutX="351.0" layoutY="295.0" prefHeight="27.0" prefWidth="171.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblProgramId" layoutX="566.0" layoutY="295.0" prefHeight="27.0" prefWidth="171.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblProgramName" layoutX="773.0" layoutY="295.0" prefHeight="27.0" prefWidth="171.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDuration" layoutX="991.0" layoutY="295.0" prefHeight="27.0" prefWidth="171.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDueAmount" layoutX="421.0" layoutY="403.0" prefHeight="27.0" prefWidth="171.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblPayment" layoutX="108.0" layoutY="483.0" prefHeight="200.0" prefWidth="1251.0">
+        <columns>
+          <TableColumn fx:id="colRegistrationId" prefWidth="125.0" text="Registration ID" />
+          <TableColumn fx:id="colStudentId" prefWidth="138.0" text="Student ID" />
+            <TableColumn fx:id="colProgramId" prefWidth="138.0" text="Program ID" />
+            <TableColumn fx:id="colDuration" prefWidth="138.0" text="Duration" />
+            <TableColumn fx:id="colRegistrationDate" prefWidth="162.0" text="Registration Date" />
+            <TableColumn fx:id="colPaymentDate" prefWidth="144.0" text="Payment Date" />
+            <TableColumn fx:id="colPaymentAmount" prefWidth="154.0" text="Payment Amount" />
+            <TableColumn fx:id="colDueamount" prefWidth="144.0" text="Due Amout" />
+            <TableColumn fx:id="colStetus" prefWidth="106.0" text="Stetus" />
+        </columns>
+      </TableView>
+      <Text fill="WHITE" layoutX="507.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration Date">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblRegistraionDate" layoutX="677.0" layoutY="200.0" prefHeight="27.0" prefWidth="171.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="918.0" layoutY="392.0" onAction="#PayOnAction" prefHeight="45.0" prefWidth="146.0" style="-fx-background-color: #f39c12;" text="PAY" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+    </children>
+</AnchorPane>
