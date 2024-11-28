@@ -1,20 +1,13 @@
 package org.example.controller;
 
-import javafx.animation.Animation;
-import javafx.animation.KeyFrame;
-import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
-import javafx.util.Duration;
 
 import java.io.IOException;
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
 
 public class DashboardController {
 
@@ -38,12 +31,6 @@ public class DashboardController {
 
     @FXML
     private Label lblStudentCount;
-
-    @FXML
-    void initialize() {
-        setDate();
-        setLocalTime();
-    }
 
     @FXML
     void btnAdminRegistrationOnAction(ActionEvent event) {
@@ -73,7 +60,15 @@ public class DashboardController {
 
     @FXML
     void btnCulinaryProgramsOnAction(ActionEvent event) {
-
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/culinaryPrograms.fxml"));
+        Parent rootNode = null;
+        try {
+            rootNode = loader.load();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        root.getChildren().clear();
+        root.getChildren().add(rootNode);
     }
 
     @FXML
@@ -83,39 +78,42 @@ public class DashboardController {
 
     @FXML
     void btnPaymentDetailsOnAction(ActionEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Payment.fxml"));
+            Parent rootNode = loader.load();
 
+            root.getChildren().clear();
+            root.getChildren().add(rootNode);
+        } catch (IOException e) {
+            e.printStackTrace(); // For debugging
+            throw new RuntimeException("Failed to load the FXML file.", e);
+        }
     }
 
     @FXML
     void btnStudentProfileOnAction(ActionEvent event) {
-
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Student.fxml"));
+        Parent rootNode = null;
+        try {
+            rootNode = loader.load();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        root.getChildren().clear();
+        root.getChildren().add(rootNode);
     }
 
     @FXML
     void btnStudentRegistrationOnAction(ActionEvent event) {
-
-    }
-
-
-    private void setDate() {
-        LocalDate now = LocalDate.now();
-        lblDate.setText(String.valueOf(now));
-    }
-
-    private void setLocalTime() {
-
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss"); // Define format
-        Timeline timeline = new Timeline(
-                new KeyFrame(Duration.seconds(1), e -> {
-                    LocalTime timeInSriLanka = LocalTime.now(); // Get current time
-                    String formattedTime = timeInSriLanka.format(formatter); // Format time
-                    lblClock.setText(formattedTime); // Set formatted time to label
-                })
-        );
-        timeline.setCycleCount(Animation.INDEFINITE); // Repeat indefinitely
-        timeline.play(); // Start the timeline
-
-
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/studentRegistration.fxml"));
+        Parent rootNode = null;
+        try {
+            rootNode = loader.load();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        root.getChildren().clear();
+        root.getChildren().add(rootNode);
     }
 
 }

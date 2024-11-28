@@ -1,6 +1,9 @@
 package org.example.bo;
 
 import org.example.bo.custom.impl.AdminBOImpl;
+import org.example.bo.custom.impl.CourseBOImpl;
+import org.example.bo.custom.impl.RegistrationBOImpl;
+import org.example.bo.custom.impl.StudentBoImpl;
 
 public class BOFactory {
     private static BOFactory boFactory;
@@ -12,14 +15,21 @@ public class BOFactory {
         return (boFactory == null)? boFactory = new BOFactory() : boFactory;
     }
     public enum BOTypes {
-        ADMIN
+        ADMIN,STUDENT,COURSE,REGISTRATION
     }
     public SuperBO getBO(BOTypes types) {
         switch (types){
             case ADMIN:
                 return new AdminBOImpl();
-                default:
+            case STUDENT:
+                return new StudentBoImpl();
+            case COURSE:
+                return new CourseBOImpl();
+            case REGISTRATION:
+                return new RegistrationBOImpl();
+            default:
                 return null;
         }
     }
 }
+

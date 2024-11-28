@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="869.0" prefWidth="1467.0" styleClass="ChiledBackground" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.StudentDetail">
+    <children>
+        <Text fill="WHITE" layoutX="527.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STUDENT DETAIL">
+            <font>
+                <Font name="Arial Bold" size="48.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="88.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="88.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Text>
+        <TextField fx:id="firstNametxt" layoutX="88.0" layoutY="231.0" prefHeight="27.0" prefWidth="272.0">
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+            <effect>
+                <DropShadow />
+            </effect>
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <Text fill="WHITE" layoutX="88.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="88.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Text>
+        <JFXButton buttonType="RAISED" layoutX="92.0" layoutY="613.0" onAction="#saveOnActionStudent" prefHeight="27.0" prefWidth="116.0" style="-fx-background-color: #009432;" text="SAVE" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </JFXButton>
+        <TableView fx:id="StudentTable" layoutX="452.0" layoutY="293.0" prefHeight="389.0" prefWidth="994.0">
+            <columns>
+                <TableColumn fx:id="colid" prefWidth="112.0" text="Student ID" />
+            <TableColumn fx:id="colfirstname" minWidth="0.0" prefWidth="173.0" text="First Name" />
+                <TableColumn fx:id="collastname" minWidth="0.0" prefWidth="177.0" text="Last Name" />
+                <TableColumn fx:id="coladdress" minWidth="0.0" prefWidth="153.0" text="Address" />
+                <TableColumn fx:id="colemail" minWidth="0.0" prefWidth="196.0" text="Email" />
+            <TableColumn fx:id="colnumber" minWidth="0.0" prefWidth="182.0" text="Phone Number" />
+            </columns>
+        </TableView>
+        <TextField fx:id="addresstxt" layoutX="88.0" layoutY="394.0" prefHeight="27.0" prefWidth="272.0">
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+            <effect>
+                <DropShadow />
+            </effect>
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <JFXButton buttonType="RAISED" layoutX="241.0" layoutY="615.0" onAction="#btnUpdateOnAction" prefHeight="39.0" prefWidth="116.0" style="-fx-background-color: #f39c12;" text="UPDATE" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="241.0" layoutY="676.0" onAction="#btnDeleteOnAction" prefHeight="39.0" prefWidth="116.0" style="-fx-background-color: #EA2027;" text="DELETE" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </JFXButton>
+      <Text fill="WHITE" layoutX="88.0" layoutY="461.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="phonenumbertxt" layoutX="88.0" layoutY="469.0" prefHeight="27.0" prefWidth="272.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Text fill="WHITE" layoutX="88.0" layoutY="540.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="emailtxt" layoutX="88.0" layoutY="548.0" prefHeight="27.0" prefWidth="272.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <DatePicker fx:id="datecombo" layoutX="88.0" layoutY="319.0" prefHeight="30.0" prefWidth="272.0" />
+      <TextField fx:id="idtxt" layoutX="208.0" layoutY="143.0" onAction="#txtStudentIdOnAction" prefHeight="27.0" prefWidth="272.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Text fill="WHITE" layoutX="403.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="lastnametxt" layoutX="403.0" layoutY="231.0" prefHeight="27.0" prefWidth="272.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <JFXButton buttonType="RAISED" layoutX="92.0" layoutY="676.0" onAction="#btnClearOnAction" prefHeight="39.0" prefWidth="116.0" style="-fx-background-color: #f39c12;" text="CLEAR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+    </children>
+</AnchorPane>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="869.0" prefWidth="1467.0" styleClass="ChiledBackground" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.StudentRegistration">
+    <children>
+        <Text fill="WHITE" layoutX="432.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STUDENT REGISTRATION">
+            <font>
+                <Font name="Arial Bold" size="48.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="108.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="108.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Text>
+        <JFXButton buttonType="RAISED" layoutX="1126.0" layoutY="421.0" onAction="#RegisterComfirmOnAction" prefHeight="51.0" prefWidth="206.0" style="-fx-background-color: #d35400;" text="REGISTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </JFXButton>
+      <Text fill="WHITE" layoutX="108.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="StudentIDComboBox" layoutX="247.0" layoutY="210.0" onAction="#cmbStudentIdOnAction" prefWidth="150.0" promptText="Student ID">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ComboBox>
+      <Label fx:id="studentName" layoutX="278.0" layoutY="303.0" prefHeight="27.0" prefWidth="262.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="studentMobile" layoutX="278.0" layoutY="365.0" prefHeight="27.0" prefWidth="262.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="579.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Program ID">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="StudentIDComboCourseComboBox" layoutX="716.0" layoutY="160.0" onAction="#cmbProgramNameOnAction" prefHeight="27.0" prefWidth="174.0" promptText="Program ID">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ComboBox>
+      <Text fill="WHITE" layoutX="579.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duration">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="CourseDuration" layoutX="716.0" layoutY="214.0" prefHeight="27.0" prefWidth="174.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="579.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Program Fee">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="fee" layoutX="734.0" layoutY="265.0" prefHeight="27.0" prefWidth="174.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="579.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Paid Amount">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="Paymenttxt" layoutX="752.0" layoutY="315.0" prefHeight="27.0" prefWidth="174.0" />
+      <Text fill="WHITE" layoutX="926.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Program Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="courseName" layoutX="1089.0" layoutY="163.0" prefHeight="27.0" prefWidth="174.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="957.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Balance">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="Amountduetxt" layoutX="1055.0" layoutY="315.0" prefHeight="27.0" prefWidth="174.0" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="579.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="cmbSelectStatus" layoutX="752.0" layoutY="365.0" onAction="#cmbSelectStatusOnAction" prefHeight="27.0" prefWidth="174.0" promptText="Select Status">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ComboBox>
+      <TableView fx:id="RegisterTable" layoutX="154.0" layoutY="496.0" prefHeight="319.0" prefWidth="1197.0">
+        <columns>
+          <TableColumn fx:id="colsid" prefWidth="115.0" text="Student ID" />
+          <TableColumn fx:id="colsname" prefWidth="168.0" text="Student Name" />
+            <TableColumn fx:id="colcid" prefWidth="88.0" text="Course ID" />
+            <TableColumn fx:id="colProgram" prefWidth="148.0" text="Course Name" />
+            <TableColumn fx:id="coldate" prefWidth="151.0" text="Date" />
+            <TableColumn fx:id="colduration" prefWidth="130.0" text="Duration" />
+            <TableColumn fx:id="colPayment" prefWidth="147.0" text="Payment" />
+            <TableColumn fx:id="coldueAmonut" prefWidth="127.0" text="Due Amount" />
+            <TableColumn fx:id="colStatus" prefWidth="122.0" text="Status" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="datecombo" layoutX="1101.0" layoutY="101.0" prefHeight="27.0" prefWidth="256.0" promptText="Date" />
+      <Text fill="WHITE" layoutX="95.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration NO:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="registrationNum" layoutX="278.0" layoutY="151.0" prefHeight="27.0" prefWidth="141.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
