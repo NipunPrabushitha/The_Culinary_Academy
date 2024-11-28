@@ -46,4 +46,11 @@ public class AdminBOImpl implements AdminBO {
         return adminDTOList;
     }
 
+    @Override
+    public boolean updatePassword(String newPassword, String userName) {
+        AdminDAO adminDAO = new AdminDAOImpl();
+        String hashedPassword = BCrypt.hashpw(newPassword, BCrypt.gensalt());
+        return adminDAO.update(hashedPassword, userName);
+    }
+
 }

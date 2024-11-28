@@ -104,17 +104,19 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <TableView fx:id="tblPayment" layoutX="108.0" layoutY="483.0" prefHeight="200.0" prefWidth="1251.0">
+      <TableView fx:id="tblPayment" layoutX="59.0" layoutY="496.0" prefHeight="200.0" prefWidth="1346.0">
         <columns>
-          <TableColumn fx:id="colRegistrationId" prefWidth="125.0" text="Registration ID" />
-          <TableColumn fx:id="colStudentId" prefWidth="138.0" text="Student ID" />
-            <TableColumn fx:id="colProgramId" prefWidth="138.0" text="Program ID" />
-            <TableColumn fx:id="colDuration" prefWidth="138.0" text="Duration" />
-            <TableColumn fx:id="colRegistrationDate" prefWidth="162.0" text="Registration Date" />
-            <TableColumn fx:id="colPaymentDate" prefWidth="144.0" text="Payment Date" />
-            <TableColumn fx:id="colPaymentAmount" prefWidth="154.0" text="Payment Amount" />
-            <TableColumn fx:id="colDueamount" prefWidth="144.0" text="Due Amout" />
-            <TableColumn fx:id="colStetus" prefWidth="106.0" text="Stetus" />
+          <TableColumn fx:id="colRegistrationId" prefWidth="90.0" text="Reg ID" />
+          <TableColumn fx:id="colStudentId" prefWidth="92.0" text="Std ID" />
+            <TableColumn fx:id="colStudentName" prefWidth="147.0" text="Student Name" />
+            <TableColumn fx:id="colProgramId" prefWidth="105.0" text="Program ID" />
+            <TableColumn fx:id="colProgramName" prefWidth="131.0" text="Program Name" />
+            <TableColumn fx:id="colDuration" prefWidth="101.0" text="Duration" />
+            <TableColumn fx:id="colRegistrationDate" prefWidth="141.0" text="Registration Date" />
+            <TableColumn fx:id="colPaymentDate" prefWidth="141.0" text="Payment Date" />
+            <TableColumn fx:id="colPaymentAmount" prefWidth="159.0" text="Paid Amount" />
+            <TableColumn fx:id="colDueamount" prefWidth="138.0" text="Due Amout" />
+            <TableColumn fx:id="colStetus" prefWidth="96.0" text="Status" />
         </columns>
       </TableView>
       <Text fill="WHITE" layoutX="507.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration Date">

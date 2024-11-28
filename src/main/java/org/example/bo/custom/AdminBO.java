@@ -11,4 +11,6 @@ public interface AdminBO extends SuperBO {
     String getIdByUserName(String username);
 
     ArrayList<AdminDTO> getAllAdmins();
+
+    boolean updatePassword(String newPassword, String userName);
 }

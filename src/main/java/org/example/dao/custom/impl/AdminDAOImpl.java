@@ -82,4 +82,27 @@ public class AdminDAOImpl implements AdminDAO {
         return admins;
     }
 
+    @Override
+    public boolean update(String hashedPassword, String userName) {
+        Session session = FactoryConfiguration.getInstance().getSession();
+        Transaction transaction = session.beginTransaction();
+
+        String sql = "UPDATE Admin SET password = :hashedPassword WHERE userName = :userName";
+        NativeQuery query = session.createNativeQuery(sql);
+        query.setParameter("hashedPassword", hashedPassword);
+        query.setParameter("userName", userName);
+
+        int rowsAffected = query.executeUpdate();
+
+        if (rowsAffected > 0) {
+            transaction.commit();
+        } else {
+            if (transaction!= null) {
+                transaction.rollback();
+            }
+        }
+        session.close();
+        return true;
+    }
+
 }

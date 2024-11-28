@@ -11,4 +11,6 @@ public interface AdminDAO extends SuperDAO {
     String getId(String username);
 
     ArrayList<Admin> getAll();
+
+    boolean update(String hashedPassword, String userName);
 }
