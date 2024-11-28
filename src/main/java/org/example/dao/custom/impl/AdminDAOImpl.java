@@ -57,4 +57,29 @@ public class AdminDAOImpl implements AdminDAO {
         return password;
     }
 
+    @Override
+    public ArrayList<Admin> getAll() {
+        Session session = FactoryConfiguration.getInstance().getSession();
+        Transaction transaction = session.beginTransaction();
+        ArrayList<Admin> admins = new ArrayList<>();
+
+        String sql = "SELECT * FROM Admin";
+
+        List<Object[]> adminList = session.createNativeQuery(sql).getResultList();
+        for (Object[] admin : adminList) {
+            String UserId = (String) admin[0];
+            String userName = (String) admin[4];
+            String password = (String) admin[2];
+            String forgetPassword = (String) admin[1];
+            String role = (String) admin[3];
+
+            Admin admin1 = new Admin(UserId, userName, password, forgetPassword, role);
+            admins.add(admin1);
+        }
+        transaction.commit();
+        session.close();
+
+        return admins;
+    }
+
 }

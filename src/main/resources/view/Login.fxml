@@ -16,17 +16,17 @@
 
 <AnchorPane fx:id="rootNode" prefHeight="515.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.LoginController">
     <children>
-        <ImageView fitHeight="779.0" fitWidth="1170.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="779.0" fitWidth="1162.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../images/pexels-elevate-1267320.jpg" />
+                <Image url="@../images/pexels-esmihel-15832883.jpg" />
             </image>
         </ImageView>
-        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fad390" height="608.0" layoutX="154.0" layoutY="91.0" opacity="0.59" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="354.0">
+        <Rectangle arcHeight="80.0" arcWidth="80.0" fill="#ffefd4" height="567.0" layoutX="408.0" layoutY="162.0" opacity="0.59" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="354.0">
             <effect>
                 <DropShadow height="94.89" radius="47.745000000000005" spread="0.38" width="98.09" />
             </effect>
         </Rectangle>
-        <TextField fx:id="txtUsername" layoutX="201.0" layoutY="381.0" prefHeight="27.0" prefWidth="260.0" style="-fx-background-color: #fad390;">
+        <TextField fx:id="txtUsername" layoutX="455.0" layoutY="449.0" prefHeight="27.0" prefWidth="260.0" style="-fx-background-color: #bdc3c7;">
             <effect>
                 <DropShadow />
             </effect>
@@ -34,7 +34,7 @@
                 <Cursor fx:constant="TEXT" />
             </cursor>
         </TextField>
-        <PasswordField fx:id="txtPassword" layoutX="201.0" layoutY="467.0" prefHeight="27.0" prefWidth="260.0" style="-fx-background-color: #fad390;">
+        <PasswordField fx:id="txtPassword" layoutX="455.0" layoutY="535.0" prefHeight="27.0" prefWidth="260.0" style="-fx-background-color: #bdc3c7;">
             <effect>
                 <DropShadow />
             </effect>
@@ -42,17 +42,17 @@
                 <Cursor fx:constant="TEXT" />
             </cursor>
         </PasswordField>
-        <Label layoutX="201.0" layoutY="355.0" text="Username" textFill="WHITE">
+        <Label layoutX="455.0" layoutY="423.0" text="Username">
             <font>
                 <Font name="System Bold" size="14.0" />
             </font>
         </Label>
-        <Label layoutX="201.0" layoutY="441.0" text="Passwoard" textFill="WHITE">
+        <Label layoutX="455.0" layoutY="509.0" text="Passwoard">
             <font>
                 <Font name="System Bold" size="14.0" />
             </font>
         </Label>
-        <Button layoutX="254.0" layoutY="542.0" mnemonicParsing="false" onAction="#btnLoginInOnAction" prefHeight="27.0" prefWidth="154.0" style="-fx-background-color: #e67e22;" text="Login">
+        <Button layoutX="508.0" layoutY="610.0" mnemonicParsing="false" onAction="#btnLoginInOnAction" prefHeight="27.0" prefWidth="154.0" style="-fx-background-color: #34495e;" text="Login" textFill="WHITE">
             <cursor>
                 <Cursor fx:constant="HAND" />
             </cursor>
@@ -63,17 +63,17 @@
                 <Font name="System Bold Italic" size="13.0" />
             </font>
         </Button>
-        <ImageView fitHeight="246.0" fitWidth="267.0" layoutX="208.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="246.0" fitWidth="267.0" layoutX="462.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/ChefLogo.png" />
             </image>
         </ImageView>
-        <Text fill="WHITE" layoutX="552.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to The Culinary Academy! We’re delighted to have you on this flavorful journey with us. Here, you’ll explore the art and science of cooking, refine your skills, and bring your culinary dreams to life. Let’s make every moment in the kitchen inspiring, every lesson unforgettable, and every dish a step closer to your passion. Let’s cook up something amazing together!" textAlignment="RIGHT" wrappingWidth="573.13818359375">
+        <Text fill="WHITE" layoutX="154.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to The Culinary Academy! We’re delighted to have you on this flavorful journey with us. Here, you’ll explore the art and science of cooking, refine your skills, and bring your culinary dreams to life. Let’s make every moment in the kitchen inspiring, every lesson unforgettable, and every dish a step closer to your passion. Let’s cook up something amazing together!" textAlignment="CENTER" wrappingWidth="862.13818359375">
             <font>
-                <Font name="System Italic" size="18.0" />
+                <Font name="System Bold Italic" size="19.0" />
             </font>
         </Text>
-        <Hyperlink layoutX="255.0" layoutY="593.0" onAction="#forgetPasswordOnAction" text="Forget Password?" textFill="WHITE" underline="true">
+        <Hyperlink layoutX="509.0" layoutY="661.0" onAction="#forgetPasswordOnAction" text="Forget Password?" textFill="WHITE" underline="true">
             <font>
                 <Font name="System Bold" size="14.0" />
             </font>

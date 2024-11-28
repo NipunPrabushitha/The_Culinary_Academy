@@ -1,21 +1,18 @@
 package org.example.controller;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
+import org.example.ViewTm.AdminTm;
 import org.example.bo.BOFactory;
 import org.example.bo.custom.AdminBO;
-import org.example.bo.custom.impl.AdminBOImpl;
-import org.example.dao.DAOFactory;
-import org.example.entity.Admin;
 import org.example.model.AdminDTO;
 
-import javax.crypto.Cipher;
-import javax.crypto.KeyGenerator;
-import javax.crypto.SecretKey;
-import javax.crypto.spec.SecretKeySpec;
-import java.util.Base64;
+import java.util.List;
 
 public class AdminRegistration {
 
@@ -35,7 +32,7 @@ public class AdminRegistration {
     private TableColumn<?, ?> tblAdminUsername;
 
     @FXML
-    private TableView<?> tblCoordinatorTable;
+    private TableView<AdminTm> tblAdminTable;
 
     @FXML
     private PasswordField txtAdminPassword;
@@ -51,6 +48,32 @@ public class AdminRegistration {
 
     AdminBO adminBO = (AdminBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.ADMIN);
 
+    public void initialize() {
+        lordAllAdmins();
+        setCellValueFactory();
+    }
+
+    private void setCellValueFactory() {
+        tblAdminID.setCellValueFactory(new PropertyValueFactory<>("UserId"));
+        tblAdminUsername.setCellValueFactory(new PropertyValueFactory<>("userName"));
+    }
+
+    private void lordAllAdmins() {
+        ObservableList<AdminTm> admins = FXCollections.observableArrayList();
+        List<AdminDTO> adminDTOS = adminBO.getAllAdmins();
+
+        for(AdminDTO admin : adminDTOS){
+            AdminTm adminTm = null;
+            if(admin.getRole().equals("admin")){
+                 adminTm = new AdminTm(
+                        admin.getUserId(),
+                        admin.getUserName()
+                );
+            }
+            admins.add(adminTm);
+        }
+        tblAdminTable.setItems(admins);
+    }
 
     @FXML
     void btnConfirmOnAction(ActionEvent event) {

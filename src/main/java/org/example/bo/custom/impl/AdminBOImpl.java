@@ -8,6 +8,9 @@ import org.example.entity.Admin;
 import org.example.model.AdminDTO;
 import org.mindrot.jbcrypt.BCrypt;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class AdminBOImpl implements AdminBO {
     AdminDAO adminDAO = (AdminDAO) DAOFactory.getDAOFactory().getDAO(DAOFactory.DAOType.ADMIN);
 
@@ -28,6 +31,19 @@ public class AdminBOImpl implements AdminBO {
     public String getIdByUserName(String username) {
         AdminDAO adminDAO = new AdminDAOImpl();
         return adminDAO.getId(username);
+    }
+
+    @Override
+    public ArrayList<AdminDTO> getAllAdmins() {
+        AdminDAO adminDAO = new AdminDAOImpl();
+        List<Admin> adminList = adminDAO.getAll();
+        ArrayList<AdminDTO> adminDTOList = new ArrayList<>();
+
+        for (Admin admin : adminList) {
+            adminDTOList.add(new AdminDTO(admin.getUserId(), admin.getUserName(), admin.getPassword(), admin.getForgetPassword(), admin.getRole()));
+        }
+
+        return adminDTOList;
     }
 
 }

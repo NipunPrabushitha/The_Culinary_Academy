@@ -1,12 +1,18 @@
 package org.example.controller;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
+import org.example.ViewTm.AdminTm;
 import org.example.bo.BOFactory;
 import org.example.bo.custom.AdminBO;
 import org.example.model.AdminDTO;
+
+import java.util.List;
 
 
 public class CoordinatorRegistration {
@@ -21,7 +27,7 @@ public class CoordinatorRegistration {
     private TableColumn<?, ?> tblCoordinatorID;
 
     @FXML
-    private TableView<?> tblCoordinatorTable;
+    private TableView<AdminTm> tblCoordinatorTable;
 
     @FXML
     private TableColumn<?, ?> tblCoordinatorUsername;
@@ -43,6 +49,32 @@ public class CoordinatorRegistration {
 
     AdminBO adminBO = (AdminBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.ADMIN);
 
+    public void initialize() {
+        lordAllAdmins();
+        setCellValueFactory();
+    }
+
+    private void setCellValueFactory() {
+        tblCoordinatorID.setCellValueFactory(new PropertyValueFactory<>("UserId"));
+        tblCoordinatorUsername.setCellValueFactory(new PropertyValueFactory<>("userName"));
+    }
+
+    private void lordAllAdmins() {
+        ObservableList<AdminTm> admins = FXCollections.observableArrayList();
+        List<AdminDTO> adminDTOS = adminBO.getAllAdmins();
+
+        for(AdminDTO admin : adminDTOS){
+            AdminTm adminTm = null;
+            if(admin.getRole().equals("coordinator")){
+                adminTm = new AdminTm(
+                        admin.getUserId(),
+                        admin.getUserName()
+                );
+                admins.add(adminTm);
+            }
+        }
+        tblCoordinatorTable.setItems(admins);
+    }
 
     @FXML
     void btnConfirmOnAction(ActionEvent event) {
