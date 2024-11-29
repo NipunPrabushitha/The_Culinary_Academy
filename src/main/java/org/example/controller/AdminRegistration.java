@@ -87,6 +87,8 @@ public class AdminRegistration {
         if(password.equals(repassword)){
             boolean saved = adminBO.saveAdmin(new AdminDTO(userId,username, password, securityQuestion,role));
             clearFields();
+            lordAllAdmins();
+            setCellValueFactory();
             if(saved){
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setHeaderText("Admin Registration Successful");

@@ -107,16 +107,6 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Text fill="WHITE" layoutX="957.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Balance">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </Text>
-      <Label fx:id="Amountduetxt" layoutX="1055.0" layoutY="315.0" prefHeight="27.0" prefWidth="174.0" textFill="RED">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
       <Text fill="WHITE" layoutX="579.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status">
          <font>
             <Font name="System Bold" size="18.0" />

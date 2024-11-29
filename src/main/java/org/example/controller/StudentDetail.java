@@ -1,13 +1,19 @@
 package org.example.controller;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
+import org.example.ViewTm.AdminTm;
+import org.example.ViewTm.StudentTM;
 import org.example.bo.BOFactory;
 import org.example.bo.custom.StudentBo;
 import org.example.entity.Registration;
 import org.example.entity.Student;
+import org.example.model.AdminDTO;
 
 
 import java.io.IOException;
@@ -18,7 +24,7 @@ import java.util.List;
 public class StudentDetail {
 
     @FXML
-    private TableView<?> StudentTable;
+    private TableView<StudentTM> StudentTable;
 
     @FXML
     private TextField addresstxt;
@@ -66,6 +72,10 @@ public class StudentDetail {
 
 
     StudentBo studentBo = (StudentBo) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.STUDENT);
+    public void initialize() {
+        loadAllValues();
+        setCellValueFactory();
+    }
 
     @FXML
     void btnClearOnAction(ActionEvent event) {
@@ -76,6 +86,38 @@ public class StudentDetail {
         phonenumbertxt.setText("");
         emailtxt.setText("");
     }
+    public void setCellValueFactory(){
+        colid.setCellValueFactory(new PropertyValueFactory<>("id"));
+        colfirstname.setCellValueFactory(new PropertyValueFactory<>("FirstName"));
+        collastname.setCellValueFactory(new PropertyValueFactory<>("LastName"));
+        coladdress.setCellValueFactory(new PropertyValueFactory<>("Address"));
+        colemail.setCellValueFactory(new PropertyValueFactory<>("Email"));
+        colnumber.setCellValueFactory(new PropertyValueFactory<>("PhoneNumber"));
+    }
+    public void loadAllValues(){
+        ObservableList<StudentTM> students = FXCollections.observableArrayList();
+        List<Student> studentDTO = null;
+        try {
+            studentDTO = studentBo.getAllStudent();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        for(Student student : studentDTO){
+            StudentTM studentTM =new StudentTM(
+                        student.getId(),
+                        student.getFirstName(),
+                        student.getLastName(),
+                        student.getPhoneNumber(),
+                        student.getAddress(),
+                        student.getEmail()
+
+                );
+
+            students.add(studentTM);
+        }
+        StudentTable.setItems(students);
+    }
 
     @FXML
     void btnDeleteOnAction(ActionEvent event) {
@@ -83,10 +125,12 @@ public class StudentDetail {
 
         try {
             boolean b = studentBo.deleteStudent(id);
+            loadAllValues();
+            setCellValueFactory();
             if (b) {
-                new Alert(Alert.AlertType.INFORMATION, "Student Delete Success");
+                new Alert(Alert.AlertType.INFORMATION, "Student Delete Success").show();
             } else {
-                new Alert(Alert.AlertType.ERROR, "Student Delete Failed");
+                new Alert(Alert.AlertType.ERROR, "Student Delete Failed").show();
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -120,12 +164,14 @@ public class StudentDetail {
             e.printStackTrace();
         }
         if (s) {
-            new Alert(Alert.AlertType.INFORMATION, "Student Update Success");
+            new Alert(Alert.AlertType.INFORMATION, "Student Update Success").show();
         }else {
-            new Alert(Alert.AlertType.ERROR, "Student Update Failed");
+            new Alert(Alert.AlertType.ERROR, "Student Update Failed").show();
         }
         /*loadallvalues();*/
         clearTextFiled();
+        loadAllValues();
+        setCellValueFactory();
     }
 
     @FXML
@@ -156,7 +202,7 @@ public class StudentDetail {
                 alert.setContentText("Student Saved");
                 alert.showAndWait();
             }else {
-                new Alert(Alert.AlertType.ERROR, "Student save UnSuccess");
+                new Alert(Alert.AlertType.ERROR, "Student save UnSuccess").show();
             }
 
         } catch (Exception e) {
@@ -164,6 +210,8 @@ public class StudentDetail {
         }
         /*loadallvalues();*/
         clearTextFiled();
+        loadAllValues();
+        setCellValueFactory();
     }
 
     @FXML

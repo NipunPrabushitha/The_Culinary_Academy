@@ -1,12 +1,16 @@
 package org.example.controller;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
+import org.example.ViewTm.CourseTM;
 import org.example.bo.BOFactory;
 import org.example.bo.custom.CourseBO;
 import org.example.entity.Course;
@@ -19,7 +23,7 @@ import java.util.List;
 public class CulinaryPrograms {
 
     @FXML
-    private TableView<?> CourseTable;
+    private TableView<CourseTM> CourseTable;
 
     @FXML
     private TextField ProgramNametxt;
@@ -49,10 +53,41 @@ public class CulinaryPrograms {
     private AnchorPane root;
 
     CourseBO courseBO = (CourseBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.COURSE);
-
+    public void initialize() {
+        lordAllPrograms();
+        setCellValueFactory();
+    }
     @FXML
     void btnClearOnAction(ActionEvent event) {
         clearTextFiled();
+    }
+    private void setCellValueFactory() {
+        colProgramID.setCellValueFactory(new PropertyValueFactory<>("ProgramID"));
+        colName.setCellValueFactory(new PropertyValueFactory<>("ProgramName"));
+        colfee.setCellValueFactory(new PropertyValueFactory<>("fee"));
+        colDuration.setCellValueFactory(new PropertyValueFactory<>("Duration"));
+    }
+
+    private void lordAllPrograms() {
+        ObservableList<CourseTM> courseTMS = FXCollections.observableArrayList();
+        List<Course> courses = null;
+        try {
+            courses = courseBO.getAllCourse();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        for(Course course : courses){
+            CourseTM studentTM =new CourseTM(
+                    course.getProgramId(),
+                    course.getProgramName(),
+                    course.getFee(),
+                    course.getDuration()
+            );
+
+            courseTMS.add(studentTM);
+        }
+        CourseTable.setItems(courseTMS);
     }
 
     @FXML
@@ -61,10 +96,12 @@ public class CulinaryPrograms {
 
         try {
             boolean c = courseBO.deleteCourse(id);
+            lordAllPrograms();
+            setCellValueFactory();
             if (c) {
-                new Alert(Alert.AlertType.INFORMATION, "Course Delete Successfully");
+                new Alert(Alert.AlertType.INFORMATION, "Course Delete Successfully").show();
             } else {
-                new Alert(Alert.AlertType.ERROR, "Course Delete Unsuccessful");
+                new Alert(Alert.AlertType.ERROR, "Course Delete Unsuccessful").show();
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -91,16 +128,18 @@ public class CulinaryPrograms {
         try {
 
             c = courseBO.saveCourse(course);
+            lordAllPrograms();
+            setCellValueFactory();
 
         } catch (Exception e) {
             e.printStackTrace();
         }
 
         if (c) {
-            new Alert(Alert.AlertType.CONFIRMATION, "Customer SAVE Success");
+            new Alert(Alert.AlertType.CONFIRMATION, "Course saved successfully").show();
         } else {
 
-            new Alert(Alert.AlertType.ERROR, "Student save UnSuccess");
+            new Alert(Alert.AlertType.ERROR, "Course save UnSuccess").show();
         }
         /*loadallvalues();*/
         clearTextFiled();
@@ -123,16 +162,18 @@ public class CulinaryPrograms {
         try {
 
             c = courseBO.updateCourse(course);
+            lordAllPrograms();
+            setCellValueFactory();
 
         } catch (Exception e) {
             e.printStackTrace();
         }
 
         if (c) {
-            new Alert(Alert.AlertType.CONFIRMATION, "Customer update successfully....!!! :)").show();
+            new Alert(Alert.AlertType.CONFIRMATION, "Course update successfully....!!! :)").show();
 
         } else {
-            new Alert(Alert.AlertType.ERROR, "Student update unsuccessfully....!!! :(").show();
+            new Alert(Alert.AlertType.ERROR, "Course update unsuccessfully....!!! :(").show();
         }
         /*loadallvalues();*/
         clearTextFiled();

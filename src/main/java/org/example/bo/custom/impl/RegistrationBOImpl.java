@@ -113,5 +113,12 @@ public class RegistrationBOImpl implements RegistrationBO {
         return registrationDao.searchByRID(rid);
     }
 
+    @Override
+    public List<Registration> getAllReg() {
+        registrationDao.getRAll();
+        return null;
+
+    }
+
 
 }

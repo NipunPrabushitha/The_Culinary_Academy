@@ -12,8 +12,4 @@ public class CourseTM {
     private String ProgramName;
     private double fee;
     private String Duration;
-    private JFXButton delete;
-    private JFXButton update;
-
-
 }

@@ -117,6 +117,10 @@ public class RegistrationDaoImpl implements RegistrationDao {
         return registration;
     }
 
+    @Override
+    public void getRAll() {
+
+    }
 
 
 }

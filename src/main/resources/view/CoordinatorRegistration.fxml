@@ -65,7 +65,7 @@
                 <DropShadow />
             </effect>
         </PasswordField>
-        <Text fill="WHITE" layoutX="207.0" layoutY="626.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Security Question">
+        <Text fill="WHITE" layoutX="207.0" layoutY="626.0" strokeType="OUTSIDE" strokeWidth="0.0" text="What is your Favorite Colour?">
             <font>
                 <Font name="System Bold" size="14.0" />
             </font>

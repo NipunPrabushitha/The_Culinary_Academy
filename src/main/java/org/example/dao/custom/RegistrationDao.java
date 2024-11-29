@@ -19,4 +19,5 @@ public interface RegistrationDao extends CrudDao<Registration> {
     Registration searchByRID(Long id);
 
 
+    void getRAll();
 }

@@ -9,6 +9,8 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import org.example.bo.BOFactory;
+import org.example.bo.custom.RegistrationBO;
 
 public class PaymentController {
     @FXML
@@ -78,6 +80,7 @@ public class PaymentController {
 
     @FXML
     private TextField txtPaymentAmount;
+    RegistrationBO registrationBO = (RegistrationBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.REGISTRATION);
 
     @FXML
     void PayOnAction(ActionEvent event) {

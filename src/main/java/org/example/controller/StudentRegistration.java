@@ -1,9 +1,13 @@
 package org.example.controller;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
+import org.example.ViewTm.RegistrationTM;
 import org.example.bo.BOFactory;
 import org.example.bo.custom.CourseBO;
 import org.example.bo.custom.RegistrationBO;
@@ -31,7 +35,7 @@ public class StudentRegistration {
     private TextField Paymenttxt;
 
     @FXML
-    private TableView<?> RegisterTable;
+    private TableView<RegistrationTM> RegisterTable;
 
     @FXML
     private ComboBox<Integer> StudentIDComboBox;
@@ -98,7 +102,48 @@ public class StudentRegistration {
         getStudentId();
         getCourseId();
         getStatus();
+        loadAllStudents();
+        setCellValueFactory();
 
+    }
+    private void setCellValueFactory() {
+        colsid.setCellValueFactory(new PropertyValueFactory<>("Sid"));
+        colsname.setCellValueFactory(new PropertyValueFactory<>("studentName"));
+        colcid.setCellValueFactory(new PropertyValueFactory<>("courseId"));
+        colProgram.setCellValueFactory(new PropertyValueFactory<>("courseName"));
+        coldate.setCellValueFactory(new PropertyValueFactory<>("date"));
+        colduration.setCellValueFactory(new PropertyValueFactory<>("duration"));
+        colPayment.setCellValueFactory(new PropertyValueFactory<>("payment"));
+        coldueAmonut.setCellValueFactory(new PropertyValueFactory<>("dueAmount"));
+        colStatus.setCellValueFactory(new PropertyValueFactory<>("status"));
+    }
+
+    private void loadAllStudents() {
+        ObservableList<RegistrationTM> students = FXCollections.observableArrayList();
+        List<Registration> registrations = null;
+        try {
+            registrations = registrationBO.getAllRegistrationDetails();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        for (int i = 0; i < registrations.size(); i++) {
+            RegistrationTM registrationTM = new RegistrationTM(
+                    registrations.get(i).getId(),
+                    registrations.get(i).getDuration(),
+                    registrations.get(i).getPaymentDate(),
+                    registrations.get(i).getStudent().getId(),
+                    registrations.get(i).getStudentName(),
+                    registrations.get(i).getCourse().getProgramId(),
+                    registrations.get(i).getProgramName(),
+                    registrations.get(i).getPayment(),
+                    registrations.get(i).getDueAmount(),
+                    registrations.get(i).getStatus()
+
+            );
+
+            students.add(registrationTM);
+        }
+        RegisterTable.setItems(students);
     }
 
     @FXML
@@ -147,6 +192,8 @@ public class StudentRegistration {
         boolean isSaved = false;
         try {
              isSaved = registrationBO.saveRegistration(registration);
+            loadAllStudents();
+            setCellValueFactory();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

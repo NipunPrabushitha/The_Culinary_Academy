@@ -4,57 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84526be1-8330-489b-b7b9-c34bfaffd2a0" name="Changes" comment="Update some classes">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ViewTm/CourseTM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ViewTm/RegistrationTM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ViewTm/StudentTM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/bo/custom/CourseBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/bo/custom/RegistrationBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/bo/custom/StudentBo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/bo/custom/impl/CourseBOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/bo/custom/impl/RegistrationBOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/bo/custom/impl/StudentBoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/ChangeUsernameAndPassword.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/CulinaryPrograms.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/StudentDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/StudentRegistration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/CrudDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/CourseDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/RegistrationDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/StudentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/impl/CourseDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/impl/RegistrationDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/impl/StudentDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Registration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/CourseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/RegistrationDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/StudentDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Coffee.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/coffee-beans-with-props-making-coffee(1).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/pexels-esmihel-15832883.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/pexels-life-of-pix-134575.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/pexels-pixabay-372851.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/pexels-sheenawood-574111.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/Student.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/changeUsernameAndPassword.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/culinaryPrograms.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/studentRegistration.fxml" afterDir="false" />
+    <list default="true" id="84526be1-8330-489b-b7b9-c34bfaffd2a0" name="Changes" comment="done student registration">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ViewTm/PaymentTM.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/bo/BOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/bo/BOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/bo/custom/CoordinatorBO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/bo/custom/impl/CoordinatorBOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/FactoryConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/FactoryConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Utill/Regex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Utill/Regex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ViewTm/CourseTM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ViewTm/CourseTM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ViewTm/RegistrationTM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ViewTm/RegistrationTM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/bo/custom/RegistrationBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/bo/custom/RegistrationBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/bo/custom/impl/RegistrationBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/bo/custom/impl/RegistrationBOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/AdminRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/AdminRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/ChangeUsernameAndPassword.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/CoordinatorRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/CoordinatorRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/CulinaryPrograms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/CulinaryPrograms.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/DashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/DAOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/AdminDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/AdminDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/CoordinatorDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/impl/AdminDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/impl/AdminDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/impl/CoordinatorDAOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/Coordinator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/StudentDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/StudentDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/StudentRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/StudentRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/RegistrationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/RegistrationDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/impl/RegistrationDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/impl/RegistrationDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/AdminRegistration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/AdminRegistration.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/CoordinatorRegistration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/CoordinatorRegistration.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/changeUsernameAndPassword.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/studentRegistration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/studentRegistration.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,27 +54,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.LauncherWrapper.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/nipun/Documents/The_Culinary_Academy/src/main/resources/view",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/home/nipun/Documents/The_Culinary_Academy/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.LauncherWrapper.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/nipun/Documents/The_Culinary_Academy/src/main/resources/view&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/nipun/Documents/The_Culinary_Academy/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/view" />
@@ -165,6 +136,9 @@
       <workItem from="1732700810326" duration="13694000" />
       <workItem from="1732772219476" duration="3554000" />
       <workItem from="1732778176336" duration="12194000" />
+      <workItem from="1732817084175" duration="636000" />
+      <workItem from="1732860900512" duration="2579000" />
+      <workItem from="1732870645897" duration="11564000" />
     </task>
     <task id="LOCAL-00001" summary="init the project">
       <option name="closed" value="true" />
@@ -302,7 +276,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732785940341</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="done student registration">
+      <option name="closed" value="true" />
+      <created>1732817113025</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1732817113025</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,7 +306,8 @@
     <MESSAGE value="done layered architecture" />
     <MESSAGE value="done the Payment UI" />
     <MESSAGE value="Update some classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update some classes" />
+    <MESSAGE value="done student registration" />
+    <option name="LAST_COMMIT_MESSAGE" value="done student registration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
