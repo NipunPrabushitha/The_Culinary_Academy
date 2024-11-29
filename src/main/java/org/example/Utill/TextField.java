@@ -1,5 +1,5 @@
 package org.example.Utill;
 
 public enum TextField {
-    NAME,CONTACT,EMAIL,ADDRESS
+    NAME,CONTACT,EMAIL,ADDRESS,NUMBERS
 }

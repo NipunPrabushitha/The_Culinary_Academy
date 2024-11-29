@@ -14,6 +14,7 @@ public class PaymentTM {
     private Long id;
     private String duration;
     private LocalDate date;
+    private LocalDate regDate;
     private int sid;
     private String studentName;
     private String courseId;

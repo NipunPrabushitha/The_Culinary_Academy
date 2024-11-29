@@ -82,9 +82,10 @@
                 <Font size="24.0" />
             </font>
         </Label>
-        <Text fill="WHITE" layoutX="748.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="THE CULINARY ACADEMY">
+      <Rectangle arcHeight="80.0" arcWidth="80.0" fill="WHITE" height="103.0" layoutX="722.0" layoutY="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="973.0" />
+        <Text fontSmoothingType="LCD" layoutX="751.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="THE CULINARY ACADEMY">
             <font>
-                <Font name="System Bold" size="64.0" />
+                <Font name="System Bold" size="65.0" />
             </font>
         </Text>
         <AnchorPane fx:id="root" layoutX="438.0" layoutY="118.0" prefHeight="869.0" prefWidth="1467.0">

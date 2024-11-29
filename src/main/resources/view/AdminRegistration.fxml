@@ -16,11 +16,11 @@
 
 <AnchorPane fx:id="root" prefHeight="869.0" prefWidth="1467.0" styleClass="ChiledBackground" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.AdminRegistration">
     <children>
-      <ImageView fitHeight="869.0" fitWidth="1467.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../images/Coffee.png" />
-         </image>
-      </ImageView>
+        <ImageView fitHeight="869.0" fitWidth="1467.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/BlackFood.png" />
+            </image>
+        </ImageView>
         <Text fill="WHITE" layoutX="561.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMIN REGISTRATION">
             <font>
                 <Font name="Arial Bold" size="48.0" />

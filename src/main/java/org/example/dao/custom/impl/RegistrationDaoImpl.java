@@ -40,7 +40,17 @@ public class RegistrationDaoImpl implements RegistrationDao {
 
     @Override
     public boolean update(Registration entity) throws IOException {
-        return false;
+        Session session = FactoryConfiguration.getInstance().getSession();
+        Transaction transaction = session.beginTransaction();
+
+        session.update(entity);
+
+
+        transaction.commit();
+        session.close();
+
+
+        return true;
     }
 
     @Override

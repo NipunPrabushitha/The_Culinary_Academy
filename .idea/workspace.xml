@@ -4,27 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84526be1-8330-489b-b7b9-c34bfaffd2a0" name="Changes" comment="done student registration">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ViewTm/PaymentTM.java" afterDir="false" />
+    <list default="true" id="84526be1-8330-489b-b7b9-c34bfaffd2a0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/BlackFood.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Utill/Regex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Utill/Regex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ViewTm/CourseTM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ViewTm/CourseTM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ViewTm/RegistrationTM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ViewTm/RegistrationTM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Utill/TextField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Utill/TextField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ViewTm/PaymentTM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ViewTm/PaymentTM.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/bo/custom/RegistrationBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/bo/custom/RegistrationBO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/bo/custom/impl/RegistrationBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/bo/custom/impl/RegistrationBOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/AdminRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/AdminRegistration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/ChangeUsernameAndPassword.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/CoordinatorRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/CoordinatorRegistration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/CulinaryPrograms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/CulinaryPrograms.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/DashboardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/PaymentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/StudentDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/StudentDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/StudentRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/StudentRegistration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/RegistrationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/RegistrationDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/impl/RegistrationDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/impl/RegistrationDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/AdminRegistration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/AdminRegistration.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/CoordinatorRegistration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/CoordinatorRegistration.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/changeUsernameAndPassword.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Payment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Payment.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Student.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Student.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/culinaryPrograms.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/culinaryPrograms.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/studentRegistration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/studentRegistration.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,32 +51,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.LauncherWrapper.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/nipun/Documents/The_Culinary_Academy/src/main/resources/view&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/home/nipun/Documents/The_Culinary_Academy/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.LauncherWrapper.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/nipun/Documents/The_Culinary_Academy/src/main/resources/images",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/home/nipun/Documents/The_Culinary_Academy/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/images" />
       <recent name="$PROJECT_DIR$/src/main/resources/view" />
       <recent name="$PROJECT_DIR$/src/main/java/org/example/controller" />
-      <recent name="$PROJECT_DIR$/src/main/resources/images" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.dao.custom" />
@@ -138,7 +135,7 @@
       <workItem from="1732778176336" duration="12194000" />
       <workItem from="1732817084175" duration="636000" />
       <workItem from="1732860900512" duration="2579000" />
-      <workItem from="1732870645897" duration="11564000" />
+      <workItem from="1732870645897" duration="20052000" />
     </task>
     <task id="LOCAL-00001" summary="init the project">
       <option name="closed" value="true" />
@@ -284,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732817113025</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="done get Registration Data">
+      <option name="closed" value="true" />
+      <created>1732899722521</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1732899722521</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +312,8 @@
     <MESSAGE value="done the Payment UI" />
     <MESSAGE value="Update some classes" />
     <MESSAGE value="done student registration" />
-    <option name="LAST_COMMIT_MESSAGE" value="done student registration" />
+    <MESSAGE value="done get Registration Data" />
+    <option name="LAST_COMMIT_MESSAGE" value="done get Registration Data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

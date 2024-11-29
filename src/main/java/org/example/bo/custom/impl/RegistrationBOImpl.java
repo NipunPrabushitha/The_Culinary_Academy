@@ -120,5 +120,10 @@ public class RegistrationBOImpl implements RegistrationBO {
 
     }
 
+    @Override
+    public boolean updateRegistration(Registration registration) throws IOException {
+        return registrationDao.update(registration);
+    }
+
 
 }

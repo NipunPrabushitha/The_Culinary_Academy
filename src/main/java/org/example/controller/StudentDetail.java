@@ -6,7 +6,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
+import org.example.Utill.Regex;
 import org.example.ViewTm.AdminTm;
 import org.example.ViewTm.StudentTM;
 import org.example.bo.BOFactory;
@@ -238,4 +240,48 @@ public class StudentDetail {
         emailtxt.setText("");
     }
 
+    public boolean isValied(){
+        /*boolean IdValid = Regex.setTextColor(lk.gsbp.Utill.TextField.IDC, txtCustomerId);
+        boolean nameValid = Regex.setTextColor(lk.gsbp.Utill.TextField.NAME, txtCustomerName);
+        boolean addressValid = Regex.setTextColor(lk.gsbp.Utill.TextField.ADDRESS, txtCustomerAddress);
+        boolean contactValid = Regex.setTextColor(lk.gsbp.Utill.TextField.CONTACT, txtCustomerContact);
+        boolean emailValid = Regex.setTextColor(lk.gsbp.Utill.TextField.EMAIL, txtCustomerEmail);
+
+        return IdValid && nameValid && addressValid && contactValid && emailValid;*/
+        boolean IdValid = Regex.setTextColour(org.example.Utill.TextField.NUMBERS, idtxt);
+        boolean FirstNameValid = Regex.setTextColour(org.example.Utill.TextField.NAME, firstNametxt);
+        boolean LastNameValid = Regex.setTextColour(org.example.Utill.TextField.NAME, lastnametxt);
+        boolean PhoneNumberValid = Regex.setTextColour(org.example.Utill.TextField.CONTACT, phonenumbertxt);
+        boolean EmailValid = Regex.setTextColour(org.example.Utill.TextField.EMAIL, emailtxt);
+        boolean AddressValid = Regex.setTextColour(org.example.Utill.TextField.ADDRESS, addresstxt);
+
+        return IdValid && FirstNameValid && LastNameValid && PhoneNumberValid && EmailValid && AddressValid;
+    }
+    /*public void CustomerIdOnKeyReleased(KeyEvent keyEvent) {
+        Regex.setTextColor(lk.gsbp.Utill.TextField.IDC, txtCustomerId);
+    }*/
+
+    public void txtFirstNameOnKeyReleased(KeyEvent keyEvent) {
+        Regex.setTextColour(org.example.Utill.TextField.NAME, firstNametxt);
+    }
+
+    public void txtAddressOnKeyReleased(KeyEvent keyEvent) {
+        Regex.setTextColour(org.example.Utill.TextField.ADDRESS, addresstxt);
+    }
+
+    public void txtPhoneNumberOnKeyReleased(KeyEvent keyEvent) {
+        Regex.setTextColour(org.example.Utill.TextField.CONTACT, phonenumbertxt);
+    }
+
+    public void txtEmailOnKeyReleased(KeyEvent keyEvent) {
+        Regex.setTextColour(org.example.Utill.TextField.EMAIL, emailtxt);
+    }
+
+    public void txtStudentIdOnKeyReleased(KeyEvent keyEvent) {
+        Regex.setTextColour(org.example.Utill.TextField.NUMBERS, idtxt);
+    }
+
+    public void txtLastNameOnKeyReleased(KeyEvent keyEvent) {
+        Regex.setTextColour(org.example.Utill.TextField.NAME, lastnametxt);
+    }
 }
