@@ -4,25 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84526be1-8330-489b-b7b9-c34bfaffd2a0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/BlackFood.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Utill/Regex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Utill/Regex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Utill/TextField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Utill/TextField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ViewTm/PaymentTM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ViewTm/PaymentTM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/bo/custom/RegistrationBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/bo/custom/RegistrationBO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/bo/custom/impl/RegistrationBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/bo/custom/impl/RegistrationBOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/DashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/PaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/StudentDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/StudentDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/impl/RegistrationDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/custom/impl/RegistrationDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/AdminRegistration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/AdminRegistration.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/CoordinatorRegistration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/CoordinatorRegistration.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Dashboard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Payment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Payment.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Student.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Student.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/culinaryPrograms.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/culinaryPrograms.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/studentRegistration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/studentRegistration.fxml" afterDir="false" />
+    <list default="true" id="84526be1-8330-489b-b7b9-c34bfaffd2a0" name="Changes" comment="done payment part">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/TrainingPrograms.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +118,7 @@
       <workItem from="1732778176336" duration="12194000" />
       <workItem from="1732817084175" duration="636000" />
       <workItem from="1732860900512" duration="2579000" />
-      <workItem from="1732870645897" duration="20052000" />
+      <workItem from="1732870645897" duration="22084000" />
     </task>
     <task id="LOCAL-00001" summary="init the project">
       <option name="closed" value="true" />
@@ -289,7 +272,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732899722521</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="done payment part">
+      <option name="closed" value="true" />
+      <created>1732908555469</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1732908555469</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,7 +304,8 @@
     <MESSAGE value="Update some classes" />
     <MESSAGE value="done student registration" />
     <MESSAGE value="done get Registration Data" />
-    <option name="LAST_COMMIT_MESSAGE" value="done get Registration Data" />
+    <MESSAGE value="done payment part" />
+    <option name="LAST_COMMIT_MESSAGE" value="done payment part" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
